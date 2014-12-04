@@ -1,5 +1,5 @@
-## -*- docker-image-name: "armbuild/ocs-service-tryit:utopic" -*-
-FROM armbuild/ocs-distrib-docker:utopic
+## -*- docker-image-name: "armbuild/ocs-service-tryit:vivid" -*-
+FROM armbuild/ocs-app-docker:vivid
 
 # Prepare rootfs for image-builder
 RUN /usr/local/sbin/builder-enter

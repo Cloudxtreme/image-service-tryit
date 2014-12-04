@@ -1,6 +1,18 @@
-NAME =		ocs-service-tryit
-VERSION =	utopic
-IS_LATEST =	1
-SOURCE_URL =	https://github.com/online-labs/image-builder/tree/master/service-rescue
+DOCKER_NAMESPACE =	armbuild/
+NAME =			ocs-service-tryit
+VERSION =		vivid
+VERSION_ALIASES =	15.04
+IS_LATEST =		1
+TITLE =			Try-it
+DESCRIPTION =		Try-it image with Docker and tty.js
+SOURCE_URL =		https://github.com/online-labs/image-service-tryit
 
-include ../docker-rules.mk
+
+## Image tools  (https://github.com/online-labs/image-tools)
+all:	docker-rules.mk
+docker-rules.mk:
+	wget https://raw.githubusercontent.com/online-labs/image-tools/master/docker-rules.mk
+-include docker-rules.mk
+
+
+## Here you can add custom commands and overrides
