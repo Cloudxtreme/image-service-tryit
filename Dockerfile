@@ -5,13 +5,13 @@ FROM armbuild/ocs-app-docker:vivid
 RUN /usr/local/sbin/builder-enter
 
 # Install packages
-RUN apt-get -q update &&  \
-    apt-get -q upgrade && \
-    apt-get install -y -q \
-        nodejs            \
-	npm               \
-	make              \
-	g++               \
+RUN apt-get -qq update &&     \
+    apt-get -y -qq upgrade && \
+    apt-get install -y -qq    \
+        nodejs                \
+	npm                   \
+	make                  \
+	g++                   \
     && apt-get clean
 
 # Fix paths
