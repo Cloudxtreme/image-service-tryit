@@ -20,12 +20,12 @@ Commands
 --------
 
     # write the image to /dev/nbd1
-        $ make install_on_disk
+    $ make install_on_disk
 
 Full list of commands available at: https://github.com/online-labs/image-tools/tree/master#commands
 
 Links
 -----
 
-- [Try-it (limited slots)](http://labs.online.net/try-it)
+- [Try-it](http://labs.online.net/try-it) (limited slots)
 - [Online Labs' Documentation](https://doc.cloud.online.net)
