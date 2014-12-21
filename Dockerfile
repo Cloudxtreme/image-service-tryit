@@ -1,5 +1,7 @@
 ## -*- docker-image-name: "armbuild/ocs-service-tryit:vivid" -*-
 FROM armbuild/ocs-app-docker:vivid
+MAINTAINER Online Labs <opensource@ocs.online.net> (@online_en)
+
 
 # Prepare rootfs for image-builder
 RUN /usr/local/sbin/builder-enter
