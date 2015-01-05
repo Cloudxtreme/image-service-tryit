@@ -24,13 +24,16 @@ Contents
 
 ---
 
-Commands
---------
+Install
+-------
 
-    # write the image to /dev/nbd1
-    $ make install_on_disk
+Build and write the image to /dev/nbd1 (see [documentation](https://doc.cloud.online.net/howto/create_image.html))
 
-Full list of commands available at: https://github.com/online-labs/image-tools/tree/master#commands
+    $ make install
+
+Full list of commands available at: [online-labs/image-tools](https://github.com/online-labs/image-tools/tree/master#commands)
+
+---
 
 Links
 -----
