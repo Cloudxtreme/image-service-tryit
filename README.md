@@ -1,4 +1,4 @@
-Try-it image on Scaleway
+Try-it image on Scaleway [![Build Status](https://travis-ci.org/scaleway/image-service-tryit.svg?branch=master)](https://travis-ci.org/scaleway/image-service-tryit)
 ========================
 
 **Try it** images are available for 15 free minutes.
