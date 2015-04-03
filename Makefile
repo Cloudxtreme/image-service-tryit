@@ -1,15 +1,15 @@
 DOCKER_NAMESPACE =	armbuild/
-NAME =			ocs-service-tryit
+NAME =			scw-service-tryit
 VERSION =		vivid
 VERSION_ALIASES =	15.04 latest
 TITLE =			Try-it
 DESCRIPTION =		Try-it image with Docker and tty.js
-SOURCE_URL =		https://github.com/online-labs/image-service-tryit
+SOURCE_URL =		https://github.com/scaleway/image-service-tryit
 
 
-## Image tools  (https://github.com/online-labs/image-tools)
+## Image tools  (https://github.com/scaleway/image-tools)
 all:	docker-rules.mk
 docker-rules.mk:
-	wget -qO - http://j.mp/image-tools | bash
+	wget -qO - http://j.mp/scw-image-tools | bash
 -include docker-rules.mk
 ## Below you can add custom makefile commands and overrides

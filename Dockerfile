@@ -1,6 +1,6 @@
-## -*- docker-image-name: "armbuild/ocs-service-tryit:vivid" -*-
-FROM armbuild/ocs-app-docker:vivid
-MAINTAINER Online Labs <opensource@ocs.online.net> (@online_en)
+## -*- docker-image-name: "armbuild/scw-service-tryit:vivid" -*-
+FROM armbuild/scw-app-docker:latest
+MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 
 # Prepare rootfs for image-builder
@@ -29,7 +29,8 @@ RUN useradd -G sudo -s /bin/bash -m ubuntu
 RUN sed -i '/sudo/s/ALL)/ALL) NOPASSWD:/' /etc/sudoers
 
 # Patch rootfs
-ADD ./patches/ /
+ADD ./patches/etc/ /etc/
+ADD ./patches/srv/ /srv/
 
 # Clean rootfs from image-builder
 RUN /usr/local/sbin/builder-leave
