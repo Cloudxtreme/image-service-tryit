@@ -1,4 +1,4 @@
-## -*- docker-image-name: "armbuild/scw-service-tryit:vivid" -*-
+## -*- docker-image-name: "armbuild/scw-service-tryit:latest" -*-
 FROM armbuild/scw-app-docker:latest
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 

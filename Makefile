@@ -1,7 +1,7 @@
 DOCKER_NAMESPACE =	armbuild/
 NAME =			scw-service-tryit
-VERSION =		vivid
-VERSION_ALIASES =	15.04 latest
+VERSION =		latest
+VERSION_ALIASES =	
 TITLE =			Try-it
 DESCRIPTION =		Try-it image with Docker and tty.js
 SOURCE_URL =		https://github.com/scaleway/image-service-tryit
