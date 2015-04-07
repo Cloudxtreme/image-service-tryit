@@ -23,7 +23,7 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN npm install -g tty.js
 
 # Create ubuntu user
-RUN useradd -G sudo -s /bin/bash -m ubuntu
+RUN useradd -G sudo,docker -s /bin/bash -m ubuntu
 
 # Remove password for sudo
 RUN sed -i '/sudo/s/ALL)/ALL) NOPASSWD:/' /etc/sudoers
