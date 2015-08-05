@@ -1,6 +1,8 @@
 Try-it image on Scaleway [![Build Status](https://travis-ci.org/scaleway/image-service-tryit.svg?branch=master)](https://travis-ci.org/scaleway/image-service-tryit)
 ========================
 
+http://instantcloud.io
+
 **Try it** images are available for 15 free minutes.
 
 Scripts to build the official **Try-it image** on Scaleway
@@ -35,13 +37,6 @@ Full list of commands available at: [scaleway/image-tools](https://github.com/sc
 
 
 ---
-
-Links
------
-
-- [Try-it](http://labs.online.net/try-it) (limited slots)
-- [Online Labs' Documentation](https://doc.cloud.online.net)
-
 
 ---
 
