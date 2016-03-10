@@ -1,0 +1,9 @@
+[Unit]
+Description=Scaleway Try-It
+Documentation=https://github.com/scaleway/image-service-tryit
+
+[Service]
+ExecStart=/usr/local/sbin/scw-tryit
+
+[Install]
+WantedBy=multi-user.target

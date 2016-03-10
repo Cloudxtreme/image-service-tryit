@@ -1,0 +1,5 @@
+#!/bin/sh
+
+PASSWD=$(scw-metadata --cached TAGS_0)
+echo ubuntu:$PASSWD | chpasswd
+/usr/local/bin/tty.js --config /srv/shelljs/config.json --port 6969 --daemonize

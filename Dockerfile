@@ -46,5 +46,9 @@ RUN sed -i '/sudo/s/ALL)/ALL) NOPASSWD:/' /etc/sudoers
 COPY ./overlay/ /
 
 
+# Enable services
+RUN systemctl enable scw-tryit
+
+
 # Clean rootfs from image-builder
 RUN /usr/local/sbin/scw-builder-leave
